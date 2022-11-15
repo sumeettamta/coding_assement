@@ -16,3 +16,16 @@ Based on the information given, break this ticket down into 2-5 individual ticke
 You will be graded on the level of detail in each ticket, the clarity of the execution plan within and between tickets, and the intelligibility of your language. You don't need to be a native English speaker, but please proof-read your work.
 
 ## Your Breakdown Here
+
+5 tickets I can think of - 
+
+1st - Create a property/column in database/orm called agentCode(id) which will be used by Facilities
+and add unique multi index in FacilityId and agentCode . So that agent under a facilty should have unique agentCode.
+
+2nd - Add agentCode(id) property handling in save method of Agent data. Either we can use some nano ids / uuids or can take input from user.
+
+3rd - In getShiftsByFacility  function also fetch agentCode.
+
+4th - In generateReport function asl add agent Code.
+
+5th - Create a new Function getReportByAgent which will take input "agentCode" and fetch the reports for agent.
